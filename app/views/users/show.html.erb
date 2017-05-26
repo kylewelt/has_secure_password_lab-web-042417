@@ -1,0 +1,5 @@
+<h1>Welcome <%= current_user.name %></h1>
+
+<h3>Currently viewing user:</h3>
+<p><%= @user.name %></p>
+<%= link_to "Log out", logout_path, method: "delete" %>
